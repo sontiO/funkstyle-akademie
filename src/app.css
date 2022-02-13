@@ -1,0 +1,9 @@
+/*import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;700&family=The+Nautigal:wght@400;700&display=swap');
+
+@tailwind base;
+h2 {
+	@apply font-nautigal text-7xl text-gray-200;
+}
+@tailwind components;
+@tailwind utilities;
