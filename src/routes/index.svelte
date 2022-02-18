@@ -9,7 +9,7 @@ import Team from "../components/Team.svelte";
   <nav class="w-full h-20 flex flex-row justify-between bg-zinc-900/30 text-gray-200 p-6 items-center">
     <h3>funkstyle akademie</h3>
     <ul class="flex flex-row space-x-6 ">
-      <li>Stundenplan</li>
+      <li><a href="#stundenplan">Stundenplan</a></li>
       <li>Preise</li>
       <li>Location</li>
       <li>Team</li>
@@ -17,12 +17,19 @@ import Team from "../components/Team.svelte";
     </ul>
   </nav>
 
+  
+<div class="nav" id="home">
+            <p><a href="https://www.google.com/?gws_rd=ssl">Home</a></p>
+        </div>
+
   <body class="items-center flex justify-center  flex-col space-y-12 overflow-x-hidden "> 
     <h2 class="mt-12">Was ist Boogystyle?</h2>
   <EmbeddedVideo />
    <TimeTable />
-   <h2 class="mt-12">Location</h2>
-    <div>grafik Location</div>
+   <h2 id="stundenplan" class="mt-12">Location</h2>
+    <div class="sm:max-w-5xl max-w-md">
+      <img src="/map.png" alt="map location" />
+    </div>
     <h2 class="mt-12">Team</h2>
     <Team />
     <h2 class="mt-12">Kontakt</h2>

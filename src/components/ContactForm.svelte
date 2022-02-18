@@ -1,4 +1,4 @@
-<div class="w-full bg-zinc-900/30  max-w-5xl">
+<div class="w-full bg-zinc-900/30 max-w-md sm:max-w-5xl">
     <div class="absolute inset-0">
       <div class="absolute inset-y-0 left-0 bg-zinc-900/30 "></div>
     </div>
