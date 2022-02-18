@@ -1,6 +1,6 @@
 <div class="w-full bg-zinc-900/30 max-w-md sm:max-w-5xl">
-    <div class="absolute inset-0">
-      <div class="absolute inset-y-0 left-0 bg-zinc-900/30 "></div>
+    <div class="">
+      <div class=" bg-zinc-900/30 "></div>
     </div>
     <div class="relative mx-auto lg:grid lg:grid-cols-5">
       <div class="bg-zinc-800/30  py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12  w-full">
