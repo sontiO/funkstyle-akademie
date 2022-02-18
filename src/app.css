@@ -3,7 +3,7 @@
 
 @tailwind base;
 h2 {
-	@apply font-nautigal text-7xl text-gray-200;
+	@apply font-nautigal text-5xl  text-gray-200 sm:text-7xl;
 }
 @tailwind components;
 @tailwind utilities;

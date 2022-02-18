@@ -25,8 +25,8 @@ console.log(prismicData)
   
 
 
-  <body class="items-center flex justify-center  flex-col space-y-12 overflow-x-hidden "> 
-    <h2 class="mt-12">Was ist Boogystyle?</h2>
+  <body class="items-center flex justify-center  flex-col space-y-12 overflow-x-hidden mx-6"> 
+    <h2 class="mt-12 text-center ">Was ist Boogystyle?</h2>
   <EmbeddedVideo />
    <TimeTable />
    <Prices />
