@@ -1,7 +1,7 @@
 <script context="module">
 	import '../app.css';
     import createClient from "$lib/prismicClient.js"
-    import * as prismicH from "@prismicio/helpers"
+    import {setContext} from 'svelte';
     
     export async function load({ url, fetch})  {
       const client = createClient(fetch)
@@ -17,7 +17,8 @@
   
   <script>
     export let document
-    console.log(document)
+	setContext('prismicData', document);
+
 
   </script>
 

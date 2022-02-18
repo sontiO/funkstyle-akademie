@@ -5,7 +5,9 @@ import ContactForm from "../components/ContactForm.svelte";
 import Team from "../components/Team.svelte";
 import Location from "../components/Location.svelte";
 import Prices from "../components/Prices.svelte";
-
+import {getContext} from 'svelte';
+const prismicData = getContext('prismicData');
+console.log(prismicData)
 </script>
 
 <div class="w-screen h-full bg-zinc-800 overflow-x-hidden">
