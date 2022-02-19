@@ -2,8 +2,8 @@
      <script>
        export let title;
        export let subTitle;
-
      </script>
+     
      <div class="flex space-x-4">
        <div class="flex flex-col justify-between text-gray-400 font-roboto" >
          <p>20:00</p>
