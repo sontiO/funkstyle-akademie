@@ -44,7 +44,8 @@
       </div>
       <div class="bg-zinc-900/30  py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
         <div class="max-w-lg mx-auto lg:max-w-none">
-          <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+          <form action="https://api.staticforms.xyz/submit" method="post" class="grid grid-cols-1 gap-y-6">
+            <input type="hidden" name="accessKey" value="10bdca05-ffbb-4cdf-a82c-3bbe28bb27cf"> <!-- Required -->
             <div>
               <label for="full-name" class="sr-only">Full name</label>
               <input type="text" name="full-name" id="full-name" autocomplete="name" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Full name">
@@ -57,15 +58,21 @@
               <label for="phone" class="sr-only">Phone</label>
               <input type="text" name="phone" id="phone" autocomplete="tel" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Phone">
             </div>
-            <div>
+            <div class="">
               <label for="message" class="sr-only">Message</label>
               <textarea id="message" name="message" rows="4" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md" placeholder="Message"></textarea>
-            </div>
-            <div>
-              <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-zinc-700 border-zinc-600  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Senden</button>
-            </div>
-          </form>
+          <!-- If we receive data in this field submission will be ignored -->
+    <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
+            <input type="hidden" name="replyTo" value="@" > 
+            <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
+
+              <input type="submit" value="Submit" class="mt-4 inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-zinc-700 border-zinc-600  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        </form>
+        
         </div>
       </div>
     </div>
   </div>
+
+
+  
