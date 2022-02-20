@@ -14,7 +14,7 @@ console.log(prismicData)
 <div class="w-screen h-full bg-zinc-800 overflow-x-hidden">
   <nav class="w-full h-20 flex flex-row justify-between bg-zinc-900/30 text-gray-200 p-6 items-center">
     <h3>funkstyle akademie</h3>
-    <ul class="flex flex-row space-x-6 mx-6">
+    <ul class="flex flex-row space-x-6 mx-6 sm:text-base text-sm">
       <li ><a href="/#stundenplan">Stundenplan</a></li>
       <li><a href="#preise">Preise</a></li>
       <li><a href="#location">Location</a></li>
