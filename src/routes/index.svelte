@@ -1,18 +1,39 @@
+
+<script context="module">
+	import '../app.css';
+  import createClient from "$lib/prismicClient.js"
+  import {setContext} from 'svelte';
+    
+  export async function load({ url, fetch})  {
+      const client = createClient(fetch)
+      const document = await client.getSingle("landing_page")
+  
+      return { 
+        props: { 
+          document 
+       }
+      }
+    }
+</script>
+
 <script>
-import TimeTable from "../components/TimeTable.svelte";
-import EmbeddedVideo from "../components/EmbeddedVideo.svelte";
-import ContactForm from "../components/ContactForm.svelte";
-import Team from "../components/Team.svelte";
-import Location from "../components/Location.svelte";
-import Prices from "../components/Prices.svelte";
-import Footer from "../components/Footer.svelte";
-import {getContext} from 'svelte';
-const prismicData = getContext('prismicData');
-console.log(prismicData)
+  import TimeTable from "../components/TimeTable.svelte";
+  import EmbeddedVideo from "../components/EmbeddedVideo.svelte";
+  import ContactForm from "../components/ContactForm.svelte";
+  import Team from "../components/Team.svelte";
+  import Location from "../components/Location.svelte";
+  import Prices from "../components/Prices.svelte";
+  import Footer from "../components/Footer.svelte";
+  import {getContext} from 'svelte';
+
+  export let document
+	setContext('prismicData', document);
+  const prismicData = getContext('prismicData');
+  console.log(prismicData) 
 </script>
 
 <div class="w-screen h-full bg-lightGray overflow-x-hidden">
-  <nav class="w-full h-20 flex flex-row justify-between bg-zinc-900/30 text-gray-200 p-6 items-center">
+<nav class="w-full h-20 flex flex-row justify-between bg-zinc-900/30 text-gray-200 p-6 items-center">
     <h3>funkstyle akademie</h3>
     <ul class="flex flex-row space-x-6 mx-6 sm:text-base text-sm">
       <li ><a href="/#stundenplan">Stundenplan</a></li>
@@ -33,6 +54,6 @@ console.log(prismicData)
     <Team />
     <ContactForm />
   </body>
-  <Footer />
+  <Footer /> 
   </div>
 
