@@ -7,6 +7,10 @@ const config = {
 				playball: ['Playball', 'cursive'],
 				nautigal: ['The Nautigal', 'cursive'],
 				roboto: ['Roboto', 'sans-serif']
+			},
+			colors: {
+				darkGray: '#1E1E1C',
+				lightGray: '#27272A'
 			}
 		}
 	},
