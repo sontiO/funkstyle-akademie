@@ -1,5 +1,7 @@
 <script>
   import TextCard from "../components/TextCard.svelte";
+  export let prismicData;
+  console.log(prismicData);
 </script>
 
 <h2 id="stundenplan">Stundenplan</h2>
