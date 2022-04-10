@@ -53,7 +53,7 @@
     <TimeTable {prismicData} />
     <Prices />
     <Location />
-    <Team />
+    <Team {prismicData} />
     <ContactForm />
   </body>
   <Footer />
