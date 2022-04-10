@@ -1,17 +1,20 @@
+<script>
+  export let name;
+  export let image;
+  export let insta;
+  export let title;
+</script>
+
 <li>
   <div class="space-y-4">
     <div class="aspect-w-3 aspect-h-2">
-      <img
-        class="rounded-lg object-cover shadow-lg"
-        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-        alt=""
-      />
+      <img class="rounded-lg object-cover shadow-lg" src={image} alt="" />
     </div>
 
     <div class="space-y-2">
-      <div class="space-y-1 text-lg font-medium leading-6">
-        <h3 class="text-gray-200">Lindsay Walton</h3>
-        <p class="text-indigo-500">Front-end Developer</p>
+      <div class="space-y-1 text-lg  leading-6">
+        <h3 class="font-medium text-gray-200">{name}</h3>
+        <p class="font-medium text-indigo-500">{title}</p>
       </div>
       <ul class="flex space-x-5">
         <!-- <li>
@@ -23,7 +26,7 @@
               </a>
             </li> -->
         <li>
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href={insta} class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Instagram</span>
             <svg
               class="h-6 w-6"

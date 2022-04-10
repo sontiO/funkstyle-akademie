@@ -48,7 +48,6 @@
   <body
     class="mx-6 flex flex-col  items-center justify-center space-y-12 overflow-x-hidden"
   >
-    <h2 class="mt-12 text-center ">Was ist Boogystyle?</h2>
     <EmbeddedVideo {prismicData} />
     <TimeTable {prismicData} />
     <Prices />

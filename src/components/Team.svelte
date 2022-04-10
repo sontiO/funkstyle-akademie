@@ -1,5 +1,6 @@
 <script>
   export let prismicData;
+  export let trainers = prismicData.data.team;
   import TeamMember from "./TeamMember.svelte";
 </script>
 
@@ -21,9 +22,17 @@
       <ul
         class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
       >
-        <TeamMember />
-
-        <!-- More people... -->
+        <!-- this is our svelte equivalent to mapping over data-->
+        {#each trainers as trainer}
+          <li class="">
+            <TeamMember
+              name={trainer.trainer_name[0].text}
+              image={trainer.trainer_image.url}
+              insta={trainer.trainer_insta.url}
+              title={trainer.trainer_title[0].text}
+            />
+          </li>
+        {/each}
       </ul>
     </div>
   </div>

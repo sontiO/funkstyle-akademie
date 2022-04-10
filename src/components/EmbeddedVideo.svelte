@@ -7,6 +7,9 @@
   console.log(newUrl);
 </script>
 
+<h2 class="mt-12 text-center ">
+  {prismicData.data.body[0].primary.heading[0].text}
+</h2>
 <div
   class="flex  h-auto w-full max-w-md items-center justify-center sm:max-w-5xl"
 >
