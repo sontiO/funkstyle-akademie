@@ -1,19 +1,27 @@
 <script>
-    import TextCard from "../components/TextCard.svelte"
-    
-    </script>
-  <h2  id="stundenplan">Stundenplan</h2>
-    
-    <div id="stundenplan"   class=" w-full h-auto max-w-md  sm:max-w-5xl  flex flex-col sm:flex-row justify-center bg-darkGray py-8 sm:py-12">
-        
-        <div class="w-full text-center  flex flex-col justify-center items-center  space-y-12 ">
-            <h3 class="text-3xl font-roboto  text-gray-200">Dienstag</h3>
-            <TextCard title="Boogystyle" subTitle="Anfänger-Fortgeschrittene"/>
-            <div class="invisible"><TextCard title="Boogystyle" subTitle="Anfänger-Fortgeschrittene"/></div>
-        </div>
-        <div class="w-full text-center  flex flex-col justify-center items-center space-y-12 ">
-            <h3 class="text-3xl font-roboto  text-gray-200">Donnerstag</h3>
-            <TextCard title="Party Dance" subTitle="Anfänger"/>
-            <TextCard title="Locking" subTitle="Anfänger"/>
-        </div>
-        </div>
+  import TextCard from "../components/TextCard.svelte";
+</script>
+
+<h2 id="stundenplan">Stundenplan</h2>
+
+<div
+  id="stundenplan"
+  class=" bg-darkGray flex h-auto  w-full  max-w-md flex-col justify-center py-8 sm:max-w-5xl sm:flex-row sm:py-12"
+>
+  <div
+    class="flex w-full  flex-col items-center justify-center space-y-12  text-center "
+  >
+    <h3 class="font-roboto text-3xl  text-gray-200">Dienstag</h3>
+    <TextCard title="Boogystyle" subTitle="Anfänger-Fortgeschrittene" />
+    <div class="invisible">
+      <TextCard title="Boogystyle" subTitle="Anfänger-Fortgeschrittene" />
+    </div>
+  </div>
+  <div
+    class="flex w-full  flex-col items-center justify-center space-y-12 text-center "
+  >
+    <h3 class="font-roboto text-3xl  text-gray-200">Donnerstag</h3>
+    <TextCard title="Party Dance" subTitle="Anfänger" />
+    <TextCard title="Locking" subTitle="Anfänger" />
+  </div>
+</div>
