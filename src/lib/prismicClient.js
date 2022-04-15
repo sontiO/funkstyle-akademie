@@ -1,8 +1,7 @@
 import * as prismic from "@prismicio/client";
-import * as constants from "../apiKey.js";
 
 const repoName = `prismic-testqw1`; // Fill in your repository name
-const accessToken = constants.apiKey;
+const accessToken = process.env.apiKey;
 const endpoint = prismic.getEndpoint(repoName);
 
 // This defines how you will structure URL paths in your project.
