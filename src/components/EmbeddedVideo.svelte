@@ -2,7 +2,9 @@
   export let prismicData;
   console.log(prismicData.data.body[0].primary.video);
   let url = prismicData.data.body[0].primary.video.embed_url;
+  //need to manipulate youtube URl a bit, that way uiser can just paste full youtube link into CMS
   let newUrl = url.replace("watch?v=", "embed/");
+  newUrl = newUrl.split("&")[0];
 
   console.log(newUrl);
 </script>

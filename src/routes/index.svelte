@@ -28,10 +28,12 @@
   export let document;
   setContext("prismicData", document);
   const prismicData = getContext("prismicData");
+  const imprint = prismicData.data.body[0].primary.imprint;
+  const email = prismicData.data.body[0].primary.email;
   console.log(prismicData);
 </script>
 
-<div class="bg-lightGray h-full w-screen overflow-x-hidden">
+<div class="h-full w-screen overflow-x-hidden bg-lightGray">
   <nav
     class="flex h-20 w-full flex-row items-center justify-between bg-zinc-900/30 p-6 text-gray-200"
   >
@@ -53,7 +55,7 @@
     <Prices />
     <Location />
     <Team {prismicData} />
-    <ContactForm />
+    <ContactForm {imprint} {email} />
   </body>
   <Footer />
 </div>

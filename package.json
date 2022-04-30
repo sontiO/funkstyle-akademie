@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@prismicio/richtext": "^2.0.1",
 		"clsx": "^1.1.1"
 	}
 }
