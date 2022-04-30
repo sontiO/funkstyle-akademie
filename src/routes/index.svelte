@@ -30,6 +30,7 @@
   const prismicData = getContext("prismicData");
   const imprint = prismicData.data.body[0].primary.imprint;
   const email = prismicData.data.body[0].primary.email;
+  const prices = prismicData.data.prices;
   console.log(prismicData);
 </script>
 
@@ -52,7 +53,7 @@
   >
     <EmbeddedVideo {prismicData} />
     <TimeTable {prismicData} />
-    <Prices />
+    <Prices {prices} />
     <Location />
     <Team {prismicData} />
     <ContactForm {imprint} {email} />
