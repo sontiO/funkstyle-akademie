@@ -1,11 +1,24 @@
 <script>
-    import PriceCard from "../components/PriceCard.svelte";
+  import PriceCard from "../components/PriceCard.svelte";
+  export let prices;
+  console.log(prices);
 </script>
 
 <h2 id="preise" class="mt-12">Preise</h2>
-<div class="bg-zinc-900/30 max-w-md sm:max-w-5xl w-full h-full flex flex-col space-y-12  py-12 justify-center items-center">
-    <PriceCard title="Probestunde" price={0} subTitle="2x kostenlos"/>
-    <PriceCard title="Einzelstunde" price={10} />
-    <PriceCard title="Season Pass" price={96} subTitlle="3 Monate (jeweils 32€)" variant="secondary" highlightText="Unser Top Angebot" subTitle="3 Monate je 32€"/>
-    <PriceCard title="Monats Abo" price={39} subTitlle="1 Std. pro Woche"/>
+<div
+  class="flex h-full w-full max-w-md flex-col items-center justify-center space-y-12  bg-zinc-900/30 py-12 sm:max-w-5xl"
+>
+  <ul
+    class="flex w-full max-w-md flex-col items-center justify-center space-y-12 sm:max-w-5xl "
+  >
+    {#each prices as price}
+      <PriceCard
+        title={price.title[0].text}
+        price={price.price}
+        subTitle={price.subtitle[0] && price.subtitle[0].text}
+        highlightText={price.highlight_text[0] && price.highlight_text[0].text}
+        variant={price.highlight_text[0] ? "secondary" : "primary"}
+      />
+    {/each}
+  </ul>
 </div>
