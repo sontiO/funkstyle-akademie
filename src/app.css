@@ -1,9 +1,12 @@
 /*import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;700&family=The+Nautigal:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@400;700&family=The+Nautigal:wght@400;700&display=swap");
 
 @tailwind base;
 h2 {
-	@apply font-nautigal text-5xl  text-gray-200 sm:text-7xl;
+  @apply font-nautigal text-5xl  text-gray-200 sm:text-7xl;
+}
+html {
+  scroll-behavior: smooth;
 }
 @tailwind components;
 @tailwind utilities;

@@ -9,7 +9,7 @@
   console.log(newUrl);
 </script>
 
-<h2 class="mt-12 text-center ">
+<h2 class="mt-12  text-center">
   {prismicData.data.body[0].primary.heading[0].text}
 </h2>
 <div

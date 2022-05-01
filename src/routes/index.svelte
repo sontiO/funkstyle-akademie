@@ -34,12 +34,18 @@
   console.log(prismicData);
 </script>
 
-<div class="h-full w-screen overflow-x-hidden bg-lightGray">
+<div class="h-full w-screen overflow-x-hidden  bg-lightGray">
   <nav
-    class="flex h-20 w-full flex-row items-center justify-between bg-zinc-900/30 p-6 text-gray-200"
+    class="flex h-auto w-full flex-row items-center justify-between bg-zinc-900/30 p-6 text-gray-200"
   >
-    <h3>funkstyle akademie</h3>
-    <ul class="mx-6 flex flex-row space-x-6 text-sm sm:text-base">
+    <img
+      src="https://prismic-io.s3.amazonaws.com/prismic-io/logos/prismic-io-logo-white.svg"
+      alt="logo"
+      class="mr-2 h-auto w-auto"
+    />
+    <ul
+      class="mx:2 flex flex-row space-x-6 overflow-x-scroll  text-sm sm:mx-6 sm:overflow-auto sm:text-base"
+    >
       <li><a href="/#stundenplan">Stundenplan</a></li>
       <li><a href="#preise">Preise</a></li>
       <li><a href="#location">Location</a></li>

@@ -8,7 +8,7 @@
 
 <div
   id="stundenplan"
-  class=" bg-darkGray flex h-auto  w-full  max-w-md flex-col justify-center py-8 sm:max-w-5xl sm:flex-row sm:py-12"
+  class=" flex h-auto w-full  max-w-md  flex-col justify-center bg-zinc-900/30 py-8 sm:max-w-5xl sm:flex-row sm:py-12"
 >
   <div
     class="flex w-full  flex-col items-center justify-center space-y-12  text-center "
