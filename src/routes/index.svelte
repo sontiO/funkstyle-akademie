@@ -3,7 +3,7 @@
   import createClient from "$lib/prismicClient.js";
   import { setContext } from "svelte";
 
-  export async function load({ url, fetch }) {
+  export async function load({ fetch }) {
     const client = createClient(fetch);
     const document = await client.getSingle("landing_page");
 
