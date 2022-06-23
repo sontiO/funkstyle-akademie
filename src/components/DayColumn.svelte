@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="mb-8 flex  w-full flex-col items-center justify-center space-y-12 text-center "
+  class="mb-8 flex  w-full flex-col items-center justify-center space-y-8 text-center "
 >
   <h3 class=" mt-8 font-roboto  text-3xl text-gray-200">{day.day}</h3>
   {#each day.timetable as timetable, index}

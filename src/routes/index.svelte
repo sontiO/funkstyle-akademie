@@ -31,12 +31,13 @@
   const imprint = prismicData.data.body[0].primary.imprint;
   const email = prismicData.data.body[0].primary.email;
   const prices = prismicData.data.prices;
+  const trainers = prismicData.data.team;
   console.log(prismicData);
 </script>
 
 <div class="h-full w-screen overflow-x-hidden  bg-lightGray">
   <nav
-    class="flex h-auto w-full flex-row items-center justify-between bg-zinc-900/30 p-6 text-gray-200"
+    class="fixed top-0 flex h-auto  w-full flex-row items-center justify-between border-b-2  border-zinc-500/10 bg-zinc-900/40 p-6 text-gray-200  backdrop-blur-sm firefox:bg-opacity-90"
   >
     <img
       src="https://prismic-io.s3.amazonaws.com/prismic-io/logos/prismic-io-logo-white.svg"
@@ -57,11 +58,14 @@
   <body
     class="mx-6 flex flex-col  items-center justify-center space-y-12 overflow-x-hidden"
   >
+    <h2 class="mt-28  text-center">
+      {prismicData.data.body[0].primary.heading[0].text}
+    </h2>
     <EmbeddedVideo {prismicData} />
     <TimeTable {prismicData} />
     <Prices {prices} />
     <Location />
-    <Team {prismicData} />
+    <Team {trainers} />
     <ContactForm {imprint} {email} />
   </body>
   <Footer />
